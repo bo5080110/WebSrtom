@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="孛志尧">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: #00ff00;
+            padding: 10px;
+            border: 1px solid #ff0000;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <select>
+        <option value="name">路飞</option>
+        <option value="name">鸣人</option>
+        <option value="name" selected="selected">佐助</option>
+        <option value="name">犬夜叉</option>
+        <option value="name" selected="selected">樱木花道</option>
+    </select>
+</div>
+<div class="box"></div>
+</body>
+<script src="src/zepto.min.js" type="text/javascript" charset="UTF-8"></script>
+<script src="src/touch.js"></script>
+<script>
+    $(function () {
+            console.log($('.box').width());
+            console.log($('.box').height());
+            
+    });
+
+
+</script>
+</html>
